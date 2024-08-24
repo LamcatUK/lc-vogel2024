@@ -96,7 +96,7 @@ function social_icons($size = null)
         $output .= '<a href="' . $s['instagram_url'] . '" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>';
     }
     if ($s['soundcloud_url'] ?? null) {
-        $output .= '<a href="' . $s['soundcloud_url'] . '" target="_blank" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud-in fa-2x"></i></a>';
+        $output .= '<a href="' . $s['soundcloud_url'] . '" target="_blank" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud fa-2x"></i></a>';
     }
     if ($s['spotify_url'] ?? null) {
         $output .= '<a href="' . $s['spotify_url'] . '" target="_blank" aria-label="Spotify"><i class="fa-brands fa-spotify fa-2x"></i></a>';

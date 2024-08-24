@@ -104,6 +104,7 @@ if (get_field('gtm_property', 'options')) {
         <?php
     }
 }
+/*
 ?>
     <header id="navigation">
         <nav id="main-nav" class="navbar navbar-expand-lg d-block px-0" aria-labelledby="main-nav-label">
@@ -122,7 +123,7 @@ if (get_field('gtm_property', 'options')) {
 'theme_location'  => 'primary_nav',
 'container_class' => 'collapse navbar-collapse navbars',
 'container_id'    => 'primaryNav',
-'menu_class'      => 'navbar-nav w-100 justify-content-end align-items-center gap-md-4 gap-xl-5',
+'menu_class'      => 'navbar-nav w-100 justify-content-start justify-content-lg-end align-items-center gap-md-4 gap-xl-5',
 'fallback_cb'     => '',
 'menu_id'         => 'main-menu',
 'depth'           => 2,
@@ -133,3 +134,39 @@ if (get_field('gtm_property', 'options')) {
             </div>
         </nav>
     </header>
+<?php
+*/
+?>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-xl">
+        <a href="/" class="navbar-brand" rel="home" aria-label="Home Page">
+            <img src="<?=get_stylesheet_directory_uri()?>/img/vogel--wo.svg" width="200" height="30" alt="Vogel">
+        </a>
+        
+        <button class="navbar-toggler input-button text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"><i class="fa fa-navicon"></i></button>
+
+        <div class="offcanvas offcanvas-fullscreen" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <div class="navbar-brand"><img src="<?=get_stylesheet_directory_uri()?>/img/vogel--wo.svg" width="200" height="30" alt="Vogel"></div>
+                <button type="button" class="navbar-toggler input-button text-white" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="offcanvas-body">
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location'  => 'primary_nav',
+                        'container_class' => 'navbar-collapse navbars',
+                        'container_id'    => 'primaryNav',
+                        'menu_class'      => 'navbar-nav w-100 justify-content-start justify-content-lg-end align-items-center gap-md-4 gap-xl-5',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'depth'           => 2,
+                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                );
+                ?>
+            </div>
+        </div>
+    </nav>
+</header>
