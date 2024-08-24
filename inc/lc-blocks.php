@@ -14,6 +14,15 @@ function acf_blocks()
             'supports' => array('mode' => false, 'anchor' => true),
         ));
         acf_register_block_type(array(
+            'name'				=> 'lc_hero',
+            'title'				=> __('LC Hero'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_hero.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'lc_text_image',
             'title'				=> __('LC Text Image'),
             'category'			=> 'layout',

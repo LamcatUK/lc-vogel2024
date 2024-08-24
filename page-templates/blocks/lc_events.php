@@ -1,12 +1,19 @@
+<?php
+$count = get_field('events_to_show');
+?>
 <section class="events">
     <?=wp_get_attachment_image(get_field('background'),'full',false,array('class' => 'events__bg'))?>
     <div class="container-xl py-5">
+        <?php
+        if ($count != -1) {
+            ?>
         <h2 class="text-center pb-3">Upcoming Events</h2>
+            <?php
+        }
+        ?>
         <div class="row">
             <?php
             $today = date('Y-m-d');
-
-            $count = get_field('events_to_show');
 
             $q = new WP_Query(array(
                 'post_type' => 'event',

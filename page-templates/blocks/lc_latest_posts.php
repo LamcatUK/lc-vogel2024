@@ -23,6 +23,6 @@
         }
         ?>
         </div>
-        <a href="/journal/" class="button button-green">Read More</a>
+        <a href="/journal/" class="button button-green">Read My Journal</a>
     </div>
 </section>
