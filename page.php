@@ -26,6 +26,9 @@ if (!empty($hero)) {
 ?>
 <main id="main">
     <?php
+    if (get_the_post_thumbnail(get_the_ID(),'full') ?? null) {
+        echo get_the_post_thumbnail(get_the_ID(),'full',array('class' => 'page_bg'));
+    }
     if (!empty($main)) {
         // echo apply_filters('the_content',$main);
         echo do_shortcode($main);

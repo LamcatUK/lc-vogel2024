@@ -1,13 +1,14 @@
 .button {
-    padding: 0.5em 2em;
-    text-decoration: none;
-    transition: background-color var(--transition), color var(--transition), border var(--transition);
-    font-weight: var(--fw-600);
-    font-size: var(--fs-400);
+    padding: 0.5em 2em !important;
+    text-decoration: none !important;
+    transition: background-color var(--transition), color var(--transition), border var(--transition) !important;
+    font-weight: var(--fw-600) !important;
+    font-size: var(--fs-400) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
     align-self: start;
+    border-radius: 0 !important;
 }
 
 .button--sm {
@@ -25,11 +26,11 @@
 }
 
 .button-green {
-    border: 1px solid var(--col-green-400);
-    background-color: var(--col-green-400);
-    color: var(--col-black);
+    border: 1px solid var(--col-green-400) !important;
+    background-color: var(--col-green-400) !important;
+    color: var(--col-black) !important;
     &:hover {
-        background-color: var(--col-black);
-        color: var(--col-green-400);
+        background-color: var(--col-black) !important;
+        color: var(--col-green-400) !important;
     }
 }
