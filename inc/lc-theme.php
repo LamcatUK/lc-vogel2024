@@ -96,6 +96,12 @@ function my_remove_dashboard_widgets() {
 
     // Remove the "WordPress News" widget
     remove_meta_box('dashboard_primary', 'dashboard', 'side');
+
+    // Remove the "Yoast SEO: Wincher Overview" widget
+    remove_meta_box('wpseo-wincher-dashboard-overview', 'dashboard', 'normal');
+
+    // Remove the "Yoast SEO Dashboard Overview" widget
+    remove_meta_box('wpseo-dashboard-overview', 'dashboard', 'normal');
 }
 add_action('wp_dashboard_setup', 'my_remove_dashboard_widgets');
 
