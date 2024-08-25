@@ -84,6 +84,21 @@ function lc_dashboard_widget_display()
 <?php
 }
 
+function my_remove_dashboard_widgets() {
+    // Remove the "At a Glance" widget
+    remove_meta_box('dashboard_right_now', 'dashboard', 'normal');
+
+    // Remove the "Activity" widget
+    remove_meta_box('dashboard_activity', 'dashboard', 'normal');
+
+    // Remove the "Quick Draft" widget
+    remove_meta_box('dashboard_quick_press', 'dashboard', 'side');
+
+    // Remove the "WordPress News" widget
+    remove_meta_box('dashboard_primary', 'dashboard', 'side');
+}
+add_action('wp_dashboard_setup', 'my_remove_dashboard_widgets');
+
 
 function lc_theme_enqueue()
 {
