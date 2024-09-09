@@ -21579,7 +21579,7 @@ readers do not read off random characters that represent icons */
 }
 .text-green a:hover,
 .has-green-color a:hover {
-  color: var(--col-white);
+  color: var(--col-white) !important;
 }
 
 /* poppins-300 - latin */
