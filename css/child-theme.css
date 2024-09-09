@@ -21872,9 +21872,6 @@ footer .footer__menu a {
 footer .footer__menu a:hover, footer .footer__menu a:focus, footer .footer__menu a:focus-visible, footer .footer__menu a[aria-current=page] {
   color: var(--col-green-400);
 }
-footer .social_icons {
-  justify-content: center;
-}
 footer .social_icons a {
   color: var(--col-white);
   transition: color var(--transition);
@@ -21896,6 +21893,10 @@ footer .footer_info span a {
 }
 footer .footer_info span a:hover {
   color: var(--col-green-400);
+}
+
+.social_icons {
+  justify-content: center;
 }
 
 .grid {

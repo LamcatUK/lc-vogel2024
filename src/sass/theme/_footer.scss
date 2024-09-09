@@ -27,7 +27,6 @@ footer {
     }
 
     .social_icons {
-        justify-content: center;
         a {
             color: var(--col-white);
             transition: color var(--transition);
@@ -52,4 +51,8 @@ footer {
             }
         }
     }
+}
+
+.social_icons {
+    justify-content: center;
 }
