@@ -121,16 +121,21 @@ function gb_gutenberg_admin_styles()
             .wp-block {
                 max-width: 1040px;
             }
- 
+
             /* Width of "wide" blocks */
             .wp-block[data-align="wide"] {
                 max-width: 1080px;
             }
- 
+
             /* Width of "full-wide" blocks */
             .wp-block[data-align="full"] {
                 max-width: none;
             }	
+
+            /* fix Yoast metabox */
+            #editor .edit-post-layout__metaboxes {
+               margin-top: 3rem;
+            }
         </style>
     ';
 }
