@@ -21573,6 +21573,15 @@ readers do not read off random characters that represent icons */
   color: var(--col-black);
 }
 
+.text-green,
+.has-green-color {
+  color: var(--col-green-400);
+}
+.text-green a:hover,
+.has-green-color a:hover {
+  color: var(--col-white);
+}
+
 /* poppins-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

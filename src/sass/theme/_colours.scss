@@ -3,3 +3,11 @@
     color: var(--col-black);
 }
 
+.text-green,
+.has-green-color {
+    color: var(--col-green-400);
+
+    a:hover {
+        color: var(--col-white);
+    }
+}
