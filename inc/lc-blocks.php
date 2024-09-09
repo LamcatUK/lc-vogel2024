@@ -67,10 +67,28 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false, 'anchor' => true),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'lc_faq',
+            'title'				=> __('LC FAQs'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_faqs.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false, 'anchor' => true),
+        ));
     }
 }
 
 add_action('acf/init', 'acf_blocks');
+
+function unregister_yoast_faq_block() {
+    // Ensure that the function runs only if the block editor is active
+    if (function_exists('unregister_block_type')) {
+        // Unregister the Yoast FAQ block by its block type name
+        unregister_block_type('yoast/faq-block');
+    }
+}
+add_action('enqueue_block_editor_assets', 'unregister_yoast_faq_block');
 
 // Gutenburg core modifications
 add_filter('register_block_type_args', 'core_image_block_type_args', 10, 3);
