@@ -22267,6 +22267,11 @@ footer .footer_info span a:hover {
   z-index: -1;
 }
 
+.faq_block .faq__question {
+  font-weight: var(--fw-600);
+  font-size: var(--fs-450);
+}
+
 :root {
   --col-accent: var(--col-red-400);
 }
@@ -22410,10 +22415,6 @@ main ul:not([class]) > li {
 .contact {
   position: relative;
   z-index: 1;
-}
-
-#editor .edit-post-layout__metaboxes {
-  margin-top: 3rem;
 }
 
 .has-blue-color,

@@ -6,7 +6,7 @@ $classes = $block['className'] ?? 'py-5';
         <?php
         if (get_field('faq_title')) {
             ?>
-        <h2 class="h2 text-center text-md-start mb-4">
+        <h2 class="h2 text-center mb-4">
             <?=get_field('faq_title')?>
         </h2>
         <?php
