@@ -22402,6 +22402,10 @@ main ul:not([class]) > li {
   z-index: 1;
 }
 
+#editor .edit-post-layout__metaboxes {
+  margin-top: 3rem;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
