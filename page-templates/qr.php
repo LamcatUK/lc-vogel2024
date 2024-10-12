@@ -41,6 +41,20 @@ get_header();
             </a>
         <?php
         }
+        if ($s['tiktok_url'] ?? null) {
+        ?>
+            <a href="<?= $s['tiktok_url'] ?>" target="_blank" class="qr__button">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+        <?php
+        }
+        if ($s['soundcloud_url'] ?? null) {
+        ?>
+            <a href="<?= $s['soundcloud_url'] ?>" target="_blank" class="qr__button">
+                <i class="fa-brands fa-soundcloud"></i> SoundCloud
+            </a>
+        <?php
+        }
         ?>
     </div>
 </main>
