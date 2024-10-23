@@ -10,7 +10,7 @@ get_header();
 ?>" target="_blank">
 ?>
 <main>
-    <div class="container-xl qr">
+    <div class="container-xl pt-5 qr">
         <h2 class="mb-0">Contact Vogel</h2>
         <a class="qr__button" href="mailto:<?= get_field('contact_email', 'options') ?>">
             <i class="fa-solid fa-envelope"></i> Email
