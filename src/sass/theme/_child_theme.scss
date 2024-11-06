@@ -178,3 +178,26 @@ main {
         }
     }
 }
+
+// snap scroll
+// html, body {
+//     overflow: hidden;
+//     margin: 0;
+// }
+
+// main {
+//     height: 100vh;
+//     overflow-x: hidden;
+//     overflow-y: scroll;
+//     scroll-snap-type: y mandatory;
+//     scroll-behavior: smooth;
+
+// section {
+//     min-height: 100vh;
+//     scroll-snap-align: start;
+// }
+// }
+// footer {
+//     height: 50vh;
+//     scroll-snap-align: start;
+// }
